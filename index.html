@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
- <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="stylesheet" href="style.css">
+     
 </head>
 <body>
     <nav>
@@ -12,19 +14,47 @@
             <div class="logo">MonPortfolio</div>
             <div class="nav-links">
                 <a href="#accueil">Accueil</a>
+                <a href="#a-propos">À propos</a>
                 <a href="#projets">Projets</a>
                 <a href="#contact">Contact</a>
             </div>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
 
     <section id="accueil">
-        <div>
-            <h1>Bonjour, je suis Aourarh Youssef</h1>
-            <p>  Élève ingénieur en deuxième année du cycle ingénieur en Génie Informatique,
-                 passionné par le développement logiciel et web. Motivé, rigoureux et curieux, 
-                 je développe mes compétences à travers des projets concrets et le travail en équipe.
-            </p>
+        <div class="accueil-content">
+            <h1>Bonjour, je suis [Votre Prénom]</h1>
+            <p>Développeur passionné par la création de solutions web</p>
+            <a href="#projets" class="btn">Voir mes projets</a>
+        </div>
+    </section>
+
+    <section id="a-propos">
+        <h2>À propos de moi</h2>
+        <p>Je suis un développeur full-stack avec X années d'expérience dans la création d'applications web modernes et responsive.</p>
+        
+        <div class="competences">
+            <div class="competence">
+                <i class="fas fa-code"></i>
+                <h3>Frontend</h3>
+                <p>HTML, CSS, JavaScript, React</p>
+            </div>
+            <div class="competence">
+                <i class="fas fa-server"></i>
+                <h3>Backend</h3>
+                <p>Node.js, Python, PHP, MySQL</p>
+            </div>
+            <div class="competence">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive</h3>
+                <p>Design adaptatif mobile-first</p>
+            </div>
         </div>
     </section>
 
@@ -32,34 +62,69 @@
         <h2>Mes Projets</h2>
         <div class="projets-grid">
             <div class="projet-carte">
-                <h3>Projet 1</h3>
-                <p>Réalisation d'une application web de gestion des évaluations et du suivi pédagogique des étudiants dans un établissement universitaire.
-Interface moderne avec barres latérales dynamiques, tableaux de bord, et rapports statistiques.
-Collaboration en équipe avec gestion des tâches et du code via Git et GitHub.
-Intégration de données via APIs REST en utilisant Axios.
-Technologies utilisées : Vue.js, Express.js, Node.js, Git, GitHub, Axios</p>
+                <div class="projet-image">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h3>Site E-commerce</h3>
+                <p>Plateforme de vente en ligne avec panier et paiement</p>
+                <div class="projet-technos">
+                    <span class="techno">React</span>
+                    <span class="techno">Node.js</span>
+                    <span class="techno">MongoDB</span>
+                </div>
+                <a href="#" class="btn">Voir le projet</a>
             </div>
             <div class="projet-carte">
-                <h3>Projet 2</h3>
-                <p>Développement d’une application web à impact social visant à offrir une assistance psychologique via une intelligence artificielle conversationnelle.
-Création d’un psychologue virtuel capable de dialoguer avec les utilisateurs grâce à une intégration API d’IA (Free Gemini).
-Interface web simple et intuitive développée en HTML/CSS avec Flask et Python côté serveur.
-Travail intensif en équipe dans un temps limité, résolution de problèmes en temps réel et présentation finale devant un jury.
-Technologies utilisées : Python, Flask, HTML, CSS, API IA (Free Gemini)</p>
+                <div class="projet-image">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <h3>Application de Gestion</h3>
+                <p>Outil de gestion de tâches en équipe avec tableau Kanban</p>
+                <div class="projet-technos">
+                    <span class="techno">Vue.js</span>
+                    <span class="techno">Firebase</span>
+                    <span class="techno">SCSS</span>
+                </div>
+                <a href="#" class="btn">Voir le projet</a>
+            </div>
+            <div class="projet-carte">
+                <div class="projet-image">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Dashboard Analytics</h3>
+                <p>Tableau de bord avec visualisation de données en temps réel</p>
+                <div class="projet-technos">
+                    <span class="techno">React</span>
+                    <span class="techno">D3.js</span>
+                    <span class="techno">Python</span>
+                </div>
+                <a href="#" class="btn">Voir le projet</a>
             </div>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contactez-moi</h2>
-        <form>
+        <form id="contactForm">
             <input type="text" placeholder="Votre nom" required>
             <input type="email" placeholder="Votre email" required>
             <textarea placeholder="Votre message" rows="5" required></textarea>
             <button type="submit">Envoyer</button>
         </form>
     </section>
- <script src="script.js"></script>
-    
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js">
+      
+    </script>
 </body>
 </html>
